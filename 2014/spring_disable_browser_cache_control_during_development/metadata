@@ -1,0 +1,4 @@
+Title: Spring disable browser cache control during development
+PublishDate:2014-03-25
+Tags: Spring, Java
+Description: During development of web page/application there is one annoying web browser feature, cache. Cache is useful thing in production, but in development when some resource is frequently changed like javascript, css, templates or some other resource. When we hit refresh some stuff are refreshed, and some of them is not, depending on browser internal caching mechanism. Annoying thing is repeatedly clearing cache when we made some changes on resources and sometimes browser load new resources and sometime don’t.
