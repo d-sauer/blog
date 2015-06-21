@@ -11,8 +11,8 @@ To avoid this frustration in development phase, easiest way to always refresh re
 If your work with Spring framework, easiest way to do this is with Interceptor. Create custom interceptor: ```RequestDevelopmentInterceptor.java```
 
 
-<?prettify linenums=40?>
-```
+
+```prettyprint
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
  
