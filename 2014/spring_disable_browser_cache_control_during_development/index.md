@@ -30,10 +30,9 @@ public class RequestDevelopmentInterceptor implements HandlerInterceptor {
     }
 }
 ```
-
-
+    
+    
 And in case of java configuration, we need to register interceptor:
-
 ```
 @Configuration
 @ComponentScan("com.davorsauer.controller")
