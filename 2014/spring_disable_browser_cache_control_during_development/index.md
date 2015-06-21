@@ -11,7 +11,8 @@ To avoid this frustration in development phase, easiest way to always refresh re
 If your work with Spring framework, easiest way to do this is with Interceptor. Create custom interceptor: ```RequestDevelopmentInterceptor.java```
 
 
-```prettyprint linenums
+<?prettify linenums=40?>
+```
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
  
@@ -33,7 +34,7 @@ public class RequestDevelopmentInterceptor implements HandlerInterceptor {
     
     
 And in case of java configuration, we need to register interceptor:
-```prettyprint linenums
+```prettyprint
 @Configuration
 @ComponentScan("com.davorsauer.controller")
 @EnableWebMvc
