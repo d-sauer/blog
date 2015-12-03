@@ -49,7 +49,7 @@ And then open two terminals:
 Working example can be found [here](https://github.com/d-sauer/tests/tree/master/sbdt).
 
 
-![Screenshot of two terminal](./console.png "Screenshot of two terminal")
+![Screenshot of two terminal](https://raw.githubusercontent.com/d-sauer/blog/master/2015/sbdt/console.png "Screenshot of two terminal")
 
 
 
