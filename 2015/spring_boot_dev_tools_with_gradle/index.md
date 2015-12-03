@@ -20,7 +20,6 @@ One way to do it is add the necessary dependencies to your ```build.gradle```:
 	
 	repositories {
 	    mavenCentral()
-	    jcenter()
 	}
 	
 	configurations {
@@ -49,7 +48,7 @@ We need to open two terminals:
 A working example can be found [here](https://github.com/d-sauer/tests/tree/master/sbdt).
 
 
-![Screenshot of two terminal](https://raw.githubusercontent.com/d-sauer/blog/master/2015/sbdt/console.png "Screenshot of two terminal")
+![Two terminals](https://raw.githubusercontent.com/d-sauer/blog/master/2015/spring_boot_dev_tools_with_gradle/console.png "Two terminals")
 
 
 
