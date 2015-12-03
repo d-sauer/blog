@@ -1,10 +1,10 @@
 # Continous Autoreload with Spring Boot + Developer tools and Gradle
 
-With recent release of [Spring Boot 1.3](http://projects.spring.io/spring-boot/) there is new dependency in town [Spring Boot Dev Tools](https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3). Which enable as to automatically reload Spring Boot application if some classes on class path has changed.
+With the recent release of [Spring Boot 1.3](http://projects.spring.io/spring-boot/) there is a new dependency in town [Spring Boot Dev Tools](https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3). Which enable us to automatically reload Spring Boot application if some classes in class path has changed.
 
-This is quite handy for local development, but still you need to triger build phase, to re/compile class. In this case we can use Gradle continous feature, and automatically rebuild our project, and Spring Boot DevTools will pickup changes and restart application.
+This is quite handy for local development, but still you need to trigger build phase, to re/compile the class. In this case we can use [Gradle continuous build](https://docs.gradle.org/current/userguide/continuous_build.html) feature, and automatically rebuild our project, and Spring Boot DevTools will pick up changes and restart application.
 
-One way to do it is add necessary dependencies to your ```build.gradle```:
+One way to do it is add the necessary dependencies to your ```build.gradle```:
 
 	buildscript {
 	    dependencies {
@@ -35,18 +35,18 @@ One way to do it is add necessary dependencies to your ```build.gradle```:
 	}
 	
 	bootRun {
-		// Use Spring Boot DevTool only when we run gradle bootRun task
+		// Use Spring Boot DevTool only when we run Gradle bootRun task
 	    classpath = sourceSets.main.runtimeClasspath + configurations.dev
 	}
 
 
-And then open two terminals:
+We need to open two terminals:
 
-1. In first terminal start gradle build as continous task:
+1. At the first terminal start Gradle build as continuous task:
     ```gradle build --continuous```
-2. In second terminal start gradle bootRun task: ```gradle bootRun```
+2. At second terminal start the Gradle bootRun task: ```gradle bootRun```
 
-Working example can be found [here](https://github.com/d-sauer/tests/tree/master/sbdt).
+A working example can be found [here](https://github.com/d-sauer/tests/tree/master/sbdt).
 
 
 ![Screenshot of two terminal](https://raw.githubusercontent.com/d-sauer/blog/master/2015/sbdt/console.png "Screenshot of two terminal")
