@@ -1,4 +1,4 @@
-# Continous Autoreload with Spring Boot + Developer tools and Gradle
+# Continuous Autoreload with Spring Boot + Developer tools and Gradle
 
 With the recent release of [Spring Boot 1.3](http://projects.spring.io/spring-boot/) there is a new dependency in town [Spring Boot Dev Tools](https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3). Which enable us to automatically reload Spring Boot application if some classes in class path has changed.
 
