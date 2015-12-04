@@ -1,10 +1,10 @@
-# Continuous Autoreload with Spring Boot Dev tools and Gradle
+# Continuous Auto-restart with Spring Boot DevTools and Gradle
 
-With the recent release of [Spring Boot 1.3](http://projects.spring.io/spring-boot/) there is a new dependency in town [Spring Boot Dev Tools](https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3). Which enable us to automatically reload Spring Boot application if some classes in class path has changed.
+With the recent release of [Spring Boot 1.3](http://projects.spring.io/spring-boot/) there is a new dependency in town [Spring Boot DevTools](https://spring.io/blog/2015/06/17/devtools-in-spring-boot-1-3). Which enable us to automatically restart Spring Boot application if some classes in the class path has changed.
 
 This is quite handy for local development, but still you need to trigger build phase, to re/compile the class. In this case we can use [Gradle continuous build](https://docs.gradle.org/current/userguide/continuous_build.html) feature, and automatically rebuild our project, and Spring Boot DevTools will pick up changes and restart application.
 
-One way to do it is add the necessary dependencies to your ```build.gradle```. In this example _DevTool_ dependency is added only when we run _bootRun_ task (dev configuration). There are other features of _DevTool_ which can be useful not only during development, so it's up to you how you want to organize your project.
+One way to do it is add the necessary dependencies to your ```build.gradle```. In this example _DevTool_ dependency is added only when we run _bootRun_ task (_dev_ configuration). There are other features of _DevTool_ which can be useful not only during development, so it's up to you how you want to organize your project.
 
 	buildscript {
 	    dependencies {
