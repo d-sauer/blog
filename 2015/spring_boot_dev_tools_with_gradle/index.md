@@ -4,7 +4,7 @@ With the recent release of [Spring Boot 1.3](http://projects.spring.io/spring-bo
 
 This is quite handy for local development, but still you need to trigger build phase, to re/compile the class. In this case we can use [Gradle continuous build](https://docs.gradle.org/current/userguide/continuous_build.html) feature, and automatically rebuild our project, and Spring Boot DevTools will pick up changes and restart application.
 
-One way to do it is add the necessary dependencies to your ```build.gradle```:
+One way to do it is add the necessary dependencies to your ```build.gradle```. In this example _DevTool_ dependency is added only when we run _bootRun_ task (dev configuration). There are other features of _DevTool_ which can be useful not only during development, so it's up to you how you want to organize your project.
 
 	buildscript {
 	    dependencies {
@@ -38,18 +38,16 @@ One way to do it is add the necessary dependencies to your ```build.gradle```:
 	    classpath = sourceSets.main.runtimeClasspath + configurations.dev
 	}
 
-
-We need to open two terminals:
+<br/>
+Then we need to open two terminals:
 
 1. At the first terminal start Gradle build as continuous task:
     ```gradle build --continuous```
 2. At second terminal start the Gradle bootRun task: ```gradle bootRun```
 
-A working example can be found [here](https://github.com/d-sauer/tests/tree/master/sbdt).
-
 
 ![Two terminals](https://raw.githubusercontent.com/d-sauer/blog/master/2015/spring_boot_dev_tools_with_gradle/console.png "Two terminals")
 
 
-
+A working example can be found [here](https://github.com/d-sauer/tests/tree/master/sbdt).
 
