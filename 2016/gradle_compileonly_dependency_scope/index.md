@@ -17,7 +17,7 @@ Most important one are:
     Is used to add dependency only for compile time, but for the test source
 
 
- I found those dependency declaration useful when I'm producing some kind of internal library, and that library has dependencies for which I know other component which will use that library are already using it. I don't want to force other components to upgrade transitive dependencies for example to latest version of that dependency.
+ I found those dependency declaration useful when I'm producing some kind of internal library, and that library has dependencies for which I know other component which will use that library are already using it. And I don't want to force other components to upgrade their dependencies, for example to the latest version of that dependency.
 
  Then you can use:
 
