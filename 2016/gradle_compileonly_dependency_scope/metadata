@@ -1,4 +1,5 @@
 Title: Gradle compileOnly (provided) dependency scope for Java is here
-PublishDate:2016-03-15
+PublishDate:2016-03-16
 Tags: Gradle, Java
 Description: 
+I think this is long waiting one functionality for Gradle [Java](https://docs.gradle.org/2.12/userguide/java_plugin.html) plug-in, at least it is for me. In case if you are working on the libraries, and you don't want to force users to upgrade transitive dependencies.
